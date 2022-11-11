@@ -8,7 +8,7 @@
 <?php
     include_once 'mysqlConnect.php';
     $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&appid=cbfffb1e8224f2ca9fd214b46659550e");
+    curl_setopt($curl, CURLOPT_URL, "http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&appid=API");
     curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     $output = curl_exec($curl);
